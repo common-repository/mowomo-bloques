@@ -1,0 +1,170 @@
+@charset "UTF-8";
+/**
+ * Estilos que afectan a los componentes de mowomo que están en el inspector
+ */
+.mwm-panel {
+  position: relative;
+  border-top-color: #0b3d57 !important;
+  background-color: #f6f6f6; }
+  .mwm-panel .components-panel__body-title .components-button {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding: 1rem 1.7rem;
+    font-weight: bold;
+    background-color: #131e30;
+    color: #ffffff !important;
+    transition: all 200ms ease-in-out; }
+    .mwm-panel .components-panel__body-title .components-button[aria-expanded="true"], .mwm-panel .components-panel__body-title .components-button:hover {
+      background-color: #232e40; }
+    .mwm-panel .components-panel__body-title .components-button:hover .mwm-icon {
+      color: #04c8d4; }
+    .mwm-panel .components-panel__body-title .components-button .components-panel__arrow {
+      color: #ffffff !important; }
+    .mwm-panel .components-panel__body-title .components-button .mwm-icon {
+      margin-right: 1.1rem;
+      width: 15px;
+      height: 15px;
+      transition: all 200ms ease-in-out; }
+  .mwm-panel .mwm-form-input {
+    margin-top: 10px;
+    padding: 5px 0; }
+    .mwm-panel .mwm-form-input .components-toggle-control .components-form-toggle.is-checked .components-form-toggle__track {
+      background-color: #04c8d4; }
+    .mwm-panel .mwm-form-input label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #131e30; }
+    .mwm-panel .mwm-form-input input[type="number"] {
+      width: 60px !important; }
+    .mwm-panel .mwm-form-input input:not([type="number"]):not([type="range"]),
+    .mwm-panel .mwm-form-input select {
+      border-radius: 0;
+      height: 34.5px;
+      border-radius: 5px;
+      box-shadow: none !important;
+      padding: 7px 10px;
+      transition: all 200ms ease-in-out;
+      width: 100%;
+      border: 1.5px solid #131e30 !important; }
+      .mwm-panel .mwm-form-input input:not([type="number"]):not([type="range"]):hover, .mwm-panel .mwm-form-input input:not([type="number"]):not([type="range"]):focus,
+      .mwm-panel .mwm-form-input select:hover,
+      .mwm-panel .mwm-form-input select:focus {
+        border-color: #04c8d4 !important; }
+    .mwm-panel .mwm-form-input button.mwm-btn {
+      width: 100%;
+      border: 1.5px solid #04c8d4;
+      border-radius: 5px;
+      padding: 8px 10px;
+      background-color: transparent;
+      font-weight: bold;
+      color: #04c8d4;
+      transition: all 200ms ease-in-out; }
+      .mwm-panel .mwm-form-input button.mwm-btn:hover {
+        background-color: #04c8d4;
+        color: #ffffff; }
+    .mwm-panel .mwm-form-input .components-base-control__help {
+      margin-top: -5px; }
+  .mwm-panel .mwm-espacio {
+    height: 10px; }
+  .mwm-panel .mwm-logo {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    height: 30px;
+    width: 30px; }
+/**
+ * Estilos que afectan tanto al editor como al view
+ */
+.mwm-bloques.mwm-bloques-bloque-alerta {
+  padding: 20px;
+  border: 2px solid transparent; }
+  .mwm-bloques.mwm-bloques-bloque-alerta.bloque-alerta-default {
+    background-color: #e2e3e5;
+    border-color: #d6d8db; }
+  .mwm-bloques.mwm-bloques-bloque-alerta.bloque-alerta-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb; }
+  .mwm-bloques.mwm-bloques-bloque-alerta.bloque-alerta-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb; }
+  .mwm-bloques.mwm-bloques-bloque-alerta.bloque-alerta-warning {
+    background-color: #fff3cd;
+    border-color: #fff3cd; }
+  .mwm-bloques.mwm-bloques-bloque-alerta.bloque-alerta-info {
+    background-color: #d1ecf1;
+    border-color: #bee5eb; }
+/**
+ * Estilos que afectan tanto al editor como al view
+ */
+.mwm-bloques.mwm-bloques-bloque-cabecera {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .mwm-bloques.mwm-bloques-bloque-cabecera .bloque-cabecera-linea {
+    margin: 15px 0;
+    background: transparent;
+    height: 2px;
+    width: 20%;
+    max-width: none; }
+  .mwm-bloques.mwm-bloques-bloque-cabecera .bloque-cabecera-descripcion {
+    margin: 10px 0;
+    font-size: 1.2em; }
+/**
+ * Estilos que afectan tanto al editor como al view
+ */
+.mwm-bloque.bloque-descripcion-boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  border: 2px solid #000;
+  padding: 15px; }
+  .mwm-bloque.bloque-descripcion-boton.no-borde {
+    border-width: 0px; }
+  .mwm-bloque.bloque-descripcion-boton .parrafo {
+    margin: 0;
+    transition: all 200ms ease-in-out; }
+  .mwm-bloque.bloque-descripcion-boton .enlace {
+    margin-left: 15px;
+    border: 2px solid #181818;
+    padding: 8px 15px;
+    min-width: 200px;
+    text-align: center;
+    text-decoration: none;
+    color: #181818;
+    transition: all 200ms ease-in-out !important; }
+    .mwm-bloque.bloque-descripcion-boton .enlace.hover:hover {
+      background-color: #181818;
+      color: #fff; }
+
+.mwm-bloque.bloque-descripcion-boton[tipo="1"] {
+  flex-direction: column; }
+  .mwm-bloque.bloque-descripcion-boton[tipo="1"] .enlace {
+    margin-top: 15px;
+    margin-left: 0; }
+
+.mwm-bloque.bloque-descripcion-boton[estilo="1"] {
+  border-radius: 1rem; }
+  .mwm-bloque.bloque-descripcion-boton[estilo="1"] .enlace {
+    border-radius: 1rem; }
+/**
+ * Estilos que afectan tanto al editor como al view
+ */
+/**
+ * Estilos que afectan tanto al editor como al view
+ */
+/**
+ * Estilos que afectan tanto al editor como al view
+ */
+.mwm-bloques.mwm-bloques-imagen-parallax {
+  position: relative; }
+  .mwm-bloques.mwm-bloques-imagen-parallax .imagen-parallax-img {
+    height: auto;
+    width: 100%;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed; }
+    .mwm-bloques.mwm-bloques-imagen-parallax .imagen-parallax-img.mwm-parallax {
+      min-height: 150px; }
